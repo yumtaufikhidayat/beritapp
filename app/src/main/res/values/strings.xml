@@ -2,4 +2,10 @@
     <string name="app_name">BeritApp</string>
 
     <string name="topHeadlines">Top Headlines</string>
+    <string name="author">Author</string>
+    <string name="date">01 January 1990</string>
+    <string name="title">Title</string>
+    <string name="desc">Description</string>
+    <string name="source">Source</string>
+    <string name="time">Time</string>
 </resources>
