@@ -7,7 +7,9 @@ Aplikasi berita dengan dengan UI/UX yang bagus. Teknologi dan fitur yang digunak
 - Recyclerview
 - Swipe refresh layout
 
-Aplikasi ini terinspirasi dari http://bit.ly/36NvHDL
+Aplikasi ini terinspirasi dari http://bit.ly/2uJm5vT.
+Part 1: http://bit.ly/3809ylZ
+part 2: http://bit.ly/2uKZpLN
 
 ## Screnshoot
 
