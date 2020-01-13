@@ -1,5 +1,5 @@
 # Aplikasi beritapp
-Aplikasi berita dengan dengan UI/UX yang bagus. Teknologi dan fitur yang digunakan:
+Aplikasi berita dengan dengan desain material. Teknologi dan fitur yang digunakan:
 - Glide
 - Retrofit2
 - Android material design
