@@ -17,7 +17,7 @@ public class News {
 
     @SerializedName("articles")
     @Expose
-    private List<Article> articles;
+    private List<Article> article;
 
     public String getStatus() {
         return status;
@@ -36,10 +36,10 @@ public class News {
     }
 
     public List<Article> getArticles() {
-        return articles;
+        return article;
     }
 
     public void setArticles(List<Article> articles) {
-        this.articles = articles;
+        this.article = articles;
     }
 }
