@@ -1,12 +1,12 @@
 package com.example.beritapp;
 
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.widget.Toast;
 
 import com.example.beritapp.adapter.Adapter;
 import com.example.beritapp.api.ApiClient;

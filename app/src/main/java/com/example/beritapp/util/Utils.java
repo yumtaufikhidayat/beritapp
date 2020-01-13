@@ -30,7 +30,7 @@ public class Utils {
         return vibrantLightColorList[idx];
     }
 
-    public static String DateToTimeFormat(String oldstringDate){
+    public static String DateToTimeFormat(String oldstringDate) {
         PrettyTime p = new PrettyTime(new Locale(getCountry()));
         String isTime = null;
         try {
@@ -45,7 +45,7 @@ public class Utils {
         return isTime;
     }
 
-    public static String DateFormat(String oldstringDate){
+    public static String DateFormat(String oldstringDate) {
         String newDate;
         SimpleDateFormat dateFormat = new SimpleDateFormat("E, d MMM yyyy", new Locale(getCountry()));
         try {
@@ -59,9 +59,9 @@ public class Utils {
         return newDate;
     }
 
-    public static String getCountry(){
+    public static String getCountry() {
         Locale locale = Locale.getDefault();
-        String country = String.valueOf(locale.getCountry());
+        String country = locale.getCountry();
         return country.toLowerCase();
     }
 }

@@ -95,7 +95,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         this.onItemClickListener = onItemClickListener;
     }
 
-    public interface OnItemClickListener{
+    public interface OnItemClickListener {
         void onItemClick(View view, int position);
     }
 
@@ -115,7 +115,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
             desc = itemView.findViewById(R.id.desc);
             author = itemView.findViewById(R.id.author);
             publishedAt = itemView.findViewById(R.id.publishedAt);
-            source= itemView.findViewById(R.id.source);
+            source = itemView.findViewById(R.id.source);
             time = itemView.findViewById(R.id.time);
             imageView = itemView.findViewById(R.id.img);
             progressBar = itemView.findViewById(R.id.progress_load_photo);
