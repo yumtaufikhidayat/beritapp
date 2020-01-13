@@ -8,8 +8,8 @@ Aplikasi berita dengan dengan UI/UX yang bagus. Teknologi dan fitur yang digunak
 - Swipe refresh layout
 
 Aplikasi ini terinspirasi dari http://bit.ly/2uJm5vT.
-Part 1: http://bit.ly/3809ylZ
-part 2: http://bit.ly/2uKZpLN
+- Part 1: http://bit.ly/3809ylZ
+- Part 2: http://bit.ly/2uKZpLN
 
 ## Screnshoot
 
