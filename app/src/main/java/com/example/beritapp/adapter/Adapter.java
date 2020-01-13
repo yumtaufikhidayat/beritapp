@@ -1,20 +1,29 @@
 package com.example.beritapp.adapter;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.engine.GlideException;
+import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions;
+import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.request.target.Target;
 import com.example.beritapp.R;
 import com.example.beritapp.model.Article;
+import com.example.beritapp.util.Utils;
 
 import java.util.List;
 
@@ -41,14 +50,45 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holders, int position) {
 
         final MyViewHolder holder = holders;
-        Article model = articles.get(position);
+        Article article = articles.get(position);
 
         RequestOptions requestOptions = new RequestOptions();
+        requestOptions.placeholder(Utils.getRandomDrawbleColor());
+        requestOptions.error(Utils.getRandomDrawbleColor());
+        requestOptions.diskCacheStrategy(DiskCacheStrategy.ALL);
+        requestOptions.centerCrop();
+
+        Glide.with(context)
+                .load(article.getUrlToImage())
+                .apply(requestOptions)
+                .listener(new RequestListener<Drawable>() {
+                    @Override
+                    public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+                        holder.progressBar.setVisibility(View.GONE);
+                        return false;
+                    }
+
+                    @Override
+                    public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+                        holder.progressBar.setVisibility(View.GONE);
+                        return false;
+                    }
+                })
+                .transition(DrawableTransitionOptions.withCrossFade())
+                .into(holder.imageView);
+
+        holder.title.setText(article.getTitle());
+        holder.desc.setText(article.getDescription());
+        holder.source.setText(article.getSource().getName());
+        holder.time.setText(" \u2022 " + Utils.DateToTimeFormat(article.getPublishedAt()));
+        holder.publishedAt.setText(Utils.DateToTimeFormat(article.getPublishedAt()));
+        holder.author.setText(article.getAuthor());
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return articles.size();
     }
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
