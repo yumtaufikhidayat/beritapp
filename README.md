@@ -14,6 +14,6 @@ Aplikasi ini terinspirasi dari http://bit.ly/2uJm5vT.
 
 ## Screnshoot
 
-|<a href="url"><img src=dashboard.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=home.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|
+|<a href="url"><img src=dashboard.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|
 |:-----------:|:--------:|:--------:|
-| *dashboard* | *search view*|*dashboard with swipe refresh* |
+| *dashboard* | *dashboard with swipe refresh*|*dashboard with search view* |
