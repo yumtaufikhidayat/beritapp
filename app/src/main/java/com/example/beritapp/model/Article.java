@@ -3,8 +3,6 @@ package com.example.beritapp.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-import javax.xml.transform.Source;
-
 class Article {
 
     @SerializedName("source")
