@@ -9,10 +9,11 @@ Aplikasi berita dengan dengan UI/UX yang bagus. Teknologi dan fitur yang digunak
 
 Aplikasi ini terinspirasi dari http://bit.ly/2uJm5vT.
 - Part 1: http://bit.ly/3809ylZ
-- Part 2: http://bit.ly/2uKZpLN
+- Part 2: http://bit.ly/2Ti7wtp
+- Part 3: http://bit.ly/2uKZpLN
 
 ## Screnshoot
 
-|<a href="url"><img src=dashboard.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=/screenshoot/detail.gif  align="center" height="400" width="248" ></a>|
+|<a href="url"><img src=dashboard.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=home.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|
 |:-----------:|:--------:|:--------:|
-| *dashboard* | *dashboard with swipe refresh* | *detail* |
+| *dashboard* | *search view*|*dashboard with swipe refresh* |
