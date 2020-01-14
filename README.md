@@ -12,6 +12,9 @@ Aplikasi ini terinspirasi dari http://bit.ly/2uJm5vT.
 - Part 2: http://bit.ly/2Ti7wtp
 - Part 3: http://bit.ly/2uKZpLN
 - Part 4: http://bit.ly/35PKpZK
+- Part 5: http://bit.ly/2ThSEvb
+- Part 6: http://bit.ly/37Wm2eu
+- Part 7: http://bit.ly/2FPfJ0k
 
 ## Screnshoot
 
