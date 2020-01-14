@@ -11,4 +11,7 @@
     <string name="noResults">No Results!</string>
     <string name="search">Search</string>
     <string name="settings">Settings</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="titleOfNews">Title of News</string>
+    <string name="aTimeAgo">a time ago</string>
 </resources>
