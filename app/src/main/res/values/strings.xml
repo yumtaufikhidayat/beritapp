@@ -9,4 +9,6 @@
     <string name="source">Source</string>
     <string name="time">Time</string>
     <string name="noResults">No Results!</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
 </resources>

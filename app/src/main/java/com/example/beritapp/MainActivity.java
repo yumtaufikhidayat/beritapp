@@ -1,7 +1,13 @@
 package com.example.beritapp;
 
+import android.app.SearchManager;
+import android.content.Context;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -13,13 +19,14 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.example.beritapp.adapter.Adapter;
 import com.example.beritapp.api.ApiClient;
-import com.example.beritapp.api.ApiInterface;
+import com.example.beritapp.interfaces.ApiInterface;
 import com.example.beritapp.model.Article;
 import com.example.beritapp.model.News;
 import com.example.beritapp.util.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -64,9 +71,16 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         ApiInterface apiInterface = ApiClient.getApiClient().create(ApiInterface.class);
 
         String country = Utils.getCountry();
+        String language = Utils.getLanguage();
 
         Call<News> call;
-        call = apiInterface.getNews(country, API_KEY);
+
+        if (keyword.length() > 0) {
+            call = apiInterface.getNewsSearch(keyword, language, "publishedAt", API_KEY);
+        } else {
+            call = apiInterface.getNews(country, API_KEY);
+        }
+
         call.enqueue(new Callback<News>() {
             @Override
             public void onResponse(Call<News> call, Response<News> response) {
@@ -97,6 +111,43 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
                 swipeRefreshLayout.setRefreshing(false);
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        SearchManager searchManager = (SearchManager) getSystemService(Context.SEARCH_SERVICE);
+        final SearchView searchView = (SearchView) menu.findItem(R.id.action_search).getActionView();
+        MenuItem searchMenuItem = menu.findItem(R.id.action_search);
+
+        searchView.setSearchableInfo(Objects.requireNonNull(searchManager).getSearchableInfo(getComponentName()));
+        searchView.setQueryHint("Search Latest News…");
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+
+                if (query.length() > 2) {
+                    onLoadingSwipeRefresh(query);
+                } else {
+                    Toast.makeText(MainActivity.this, "Type more than two keywords", Toast.LENGTH_SHORT).show();
+                }
+
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+//                loadJson(newText);
+                return false;
+            }
+        });
+
+        searchMenuItem.getIcon().setVisible(false, false);
+
+        return true;
+
     }
 
     @Override
