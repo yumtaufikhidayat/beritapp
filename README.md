@@ -21,3 +21,7 @@ Aplikasi ini terinspirasi dari http://bit.ly/2uJm5vT.
 |<a href="url"><img src=dashboard.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=dashboardwithdetail.gif  align="center" height="400" width="248" ></a>|
 |:-----------:|:--------:|:--------:|
 | *dashboard* | *dashboard + swipe refresh*|*dashboard + detail* |
+
+|<a href="url"><img src=usingsharedelements.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=dashboardwithdetail.gif  align="center" height="400" width="248" ></a>|
+|:-----------:|:--------:|:--------:|
+| *using shared element transitions* | *dashboard + swipe refresh*|*dashboard + detail* |
