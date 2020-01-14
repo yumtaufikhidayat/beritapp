@@ -81,10 +81,26 @@
 
                     <TextView
                         android:id="@+id/title_on_appbar"
+                        style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Title"
+                        android:text="News for you"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        android:drawablePadding="10dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"/>
+
+                    <TextView
+                        android:id="@+id/subtitle_on_appbar"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
                         android:text="@string/subtitle"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
                         android:textSize="12sp"
                         android:maxLines="1"
                         android:drawablePadding="10dp"
@@ -139,7 +155,7 @@
                     <TextView
                         android:id="@+id/time"
                         android:layout_width="wrap_content"
-                        android:layout_height="200dp"
+                        android:layout_height="20dp"
                         android:layout_below="@id/title"
                         android:layout_marginTop="10dp"
                         android:maxLines="1"
