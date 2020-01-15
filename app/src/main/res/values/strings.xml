@@ -15,4 +15,10 @@
     <string name="titleOfNews">Title of News</string>
     <string name="aTimeAgo">a time ago</string>
     <string name="newsForYou">News for You</string>
+    <string name="share">Share</string>
+    <string name="openWithBrowser">Open with Browser</string>
+    <string name="errorSorry">Hmmm… Sorry, </string>
+    <string name="errorCannotShare">cannot be shared</string>
+    <string name="shareFromNewsApps">Share From the News Apps</string>
+
 </resources>

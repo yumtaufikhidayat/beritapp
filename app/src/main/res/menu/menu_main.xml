@@ -15,8 +15,9 @@
         android:theme="@android:style/Theme.Holo.Light.DarkActionBar"/>
 
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_language"
         android:orderInCategory="100"
         android:title="@string/settings"
-        app:showAsAction="never"/>
+        android:icon="@drawable/ic_language"
+        app:showAsAction="ifRoom" />
 </menu>
