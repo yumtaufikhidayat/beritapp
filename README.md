@@ -1,5 +1,5 @@
-# Aplikasi beritapp
-Aplikasi berita dengan dengan desain material. Teknologi dan fitur yang digunakan:
+# BeritApp Application
+News application with android material design. Technologies and features are:
 - Glide
 - Retrofit2
 - Android material design
@@ -7,7 +7,7 @@ Aplikasi berita dengan dengan desain material. Teknologi dan fitur yang digunaka
 - Recyclerview
 - Swipe refresh layout
 
-Aplikasi ini terinspirasi dari http://bit.ly/2uJm5vT.
+This application inspired from http://bit.ly/2uJm5vT.
 - Part 1: http://bit.ly/3809ylZ
 - Part 2: http://bit.ly/2Ti7wtp
 - Part 3: http://bit.ly/2uKZpLN
