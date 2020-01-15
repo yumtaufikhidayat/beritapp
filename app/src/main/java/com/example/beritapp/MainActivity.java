@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -16,6 +17,7 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityOptionsCompat;
 import androidx.core.util.Pair;
@@ -209,6 +211,7 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         searchView.setSearchableInfo(Objects.requireNonNull(searchManager).getSearchableInfo(getComponentName()));
         searchView.setQueryHint("Search Latest News…");
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
             @Override
             public boolean onQueryTextSubmit(String query) {
 
@@ -235,6 +238,15 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
     }
 
     @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        Intent mIntent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+        startActivity(mIntent);
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    @Override
     public void onRefresh() {
         loadJson("");
     }
@@ -251,13 +263,13 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         );
     }
 
-    private void showErrorMessage(Integer imageView, Integer title, Integer network, String message) {
+    private void showErrorMessage(Integer image, Integer title, Integer network, String message) {
 
-        if ( errorLayout.getVisibility() == View.GONE) {
+        if (errorLayout.getVisibility() == View.GONE) {
             errorLayout.setVisibility(View.VISIBLE);
         }
 
-        errorImage.setImageResource(imageView);
+        errorImage.setImageResource(image);
         errorTitle.setText(title);
         errorNetwork.setText(network);
         errorMessage.setText(message);

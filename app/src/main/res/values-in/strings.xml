@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BeritApp</string>
+
+    <string name="topHeadlines">Berita Utama</string>
+    <string name="author">Penulis</string>
+    <string name="date">01 Januari 1990</string>
+    <string name="title">Judul</string>
+    <string name="desc">Deskripsi</string>
+    <string name="source">Sumber</string>
+    <string name="time">Waktu</string>
+    <string name="noResults">Tidak ada hasil!</string>
+    <string name="search">Cari</string>
+    <string name="language">Ganti bahasa</string>
+    <string name="subtitle">Subtitle</string>
+    <string name="titleOfNews">Judul berita</string>
+    <string name="aTimeAgo">dulu</string>
+    <string name="newsForYou">Berita untuk Anda</string>
+    <string name="share">Berbagi</string>
+    <string name="openWithBrowser">Buka dengan peramban</string>
+    <string name="errorSorry">Hmmm… Maaf, </string>
+    <string name="errorCannotShare">tidak dapat dibagikan</string>
+    <string name="shareFromNewsApps">Bagikan dari BeritApp</string>
+    <string name="errorTitle">Judul kesalahan</string>
+    <string name="errorSubtitle">Pesan kesalahan</string>
+    <string name="retry">Coba lagi</string>
+    <string name="tryAgain">Silakan coba lagi!</string>
+    <string name="oops">Oops..</string>
+    <string name="errorNetwork">Kesalahan jaringan, silakan coba lagi!</string>
+</resources>
