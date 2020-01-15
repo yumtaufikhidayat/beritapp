@@ -25,3 +25,7 @@ This application inspired from http://bit.ly/2uJm5vT.
 |<a href="url"><img src=usingsharedelements.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=usingshare.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=usingsharewithbrowser.gif  align="center" height="400" width="248" ></a>|
 |:-----------:|:--------:|:--------:|
 | *using shared element transitions* | *using share text link*|*using open with browser* |
+
+|<a href="url"><img src=errornetwork.gif  align="center" height="400" width="248" ></a> |
+|:-----------:|
+| *using network error handling* |
