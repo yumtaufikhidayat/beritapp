@@ -1,5 +1,6 @@
 # BeritApp Application
 News application with android material design. The technologies of application's are:
+- API from https://newsapi.org/
 - Glide
 - Retrofit2
 - Android material design
