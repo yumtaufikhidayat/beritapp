@@ -19,14 +19,14 @@ This application inspired from http://bit.ly/2uJm5vT.
 
 ## Screnshoot
 
-|<a href="url"><img src=dashboard.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=dashboardwithdetail.gif  align="center" height="400" width="248" ></a>|
+|<img src=dashboard.gif  align="center" height="400" width="248" ></a> |<img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|<img src=dashboardwithdetail.gif  align="center" height="400" width="248" ></a>|
 |:-----------:|:--------:|:--------:|
 | *dashboard* | *dashboard + swipe refresh*|*dashboard + detail* |
 
-|<a href="url"><img src=usingsharedelements.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=usingshare.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=usingsharewithbrowser.gif  align="center" height="400" width="248" ></a>|
+|<img src=usingsharedelements.gif  align="center" height="400" width="248" ></a> |<img src=usingshare.gif  align="center" height="400" width="248" ></a>|<img src=usingsharewithbrowser.gif  align="center" height="400" width="248" ></a>|
 |:-----------:|:--------:|:--------:|
 | *using shared element transitions* | *using share text link*|*using open with browser* |
 
-|<a href="url"><img src=errornetwork.gif  align="center" height="400" width="248" ></a> |<a href="url"><img src=usinglocalization.gif  align="center" height="400" width="248" ></a>|<a href="url"><img src=usingsearchview.gif  align="center" height="400" width="248" ></a>|
+|<img src=errornetwork.gif  align="center" height="400" width="248" ></a> |<img src=usinglocalization.gif  align="center" height="400" width="248" ></a>|<img src=usingsearchview.gif  align="center" height="400" width="248" ></a>|
 |:-----------:|:--------:|:--------:|
 | *using network error handling* |*using localization*|*using search view* |
