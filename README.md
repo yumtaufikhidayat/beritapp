@@ -1,5 +1,5 @@
 # BeritApp Application
-News application with android material design. Technologies and features are:
+News application with android material design. The technologies of application's are:
 - Glide
 - Retrofit2
 - Android material design
