@@ -8,6 +8,12 @@ News application with android material design. The technologies of application's
 - Recyclerview
 - Swipe refresh layout
 
+The features of application are:
+- Realtime news data
+- Localization for Indonesian and English
+- Swipe refresh
+- Search view
+
 This application inspired from http://bit.ly/2uJm5vT.
 - Part 1: http://bit.ly/3809ylZ
 - Part 2: http://bit.ly/2Ti7wtp
@@ -17,7 +23,7 @@ This application inspired from http://bit.ly/2uJm5vT.
 - Part 6: http://bit.ly/37Wm2eu
 - Part 7: http://bit.ly/2FPfJ0k
 
-## Screnshoot
+# Screnshoot
 
 |<img src=dashboard.gif  align="center" height="400" width="248" ></a> |<img src=dashboardwithswiperefresh.gif  align="center" height="400" width="248" ></a>|<img src=dashboardwithdetail.gif  align="center" height="400" width="248" ></a>|
 |:-----------:|:--------:|:--------:|
